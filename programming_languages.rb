@@ -16,7 +16,7 @@ def reformat_languages(languages)
         a[langName][:style] = []
       end
       
-              a[langName][:style].push(style)
+      a[langName][:style].push(style)
     end
   end
   
