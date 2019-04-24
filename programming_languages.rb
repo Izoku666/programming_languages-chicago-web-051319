@@ -5,17 +5,6 @@ def reformat_languages(languages)
     langs.each do |langName , type|
       a[langName] = {}
       
-      if a[langName].include?(:style) == false
-        #puts "Has no style, adding it"
-        a[langName][:style] = []
-        a[langName][:style] << style
-      elsif a[langName].include?(:style) == true
-        puts "DOING THE JAVASCRIPT THING"
-        a[langName][:style] << style
-      end
-      
-
-      
       #iterate over the types and add them to "a"
       type.each do |typeKey , typeVal|
         a[langName][:type] = typeVal
