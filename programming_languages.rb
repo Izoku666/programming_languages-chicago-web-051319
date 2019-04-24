@@ -10,6 +10,7 @@ def reformat_languages(languages)
         a[langName][:style] = []
         a[langName][:style] << style
       else
+        puts "DOING THE JAVASCRIPT THING"
         a[langName][:style] << style
       end
       
