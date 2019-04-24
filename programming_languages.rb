@@ -4,8 +4,8 @@ def reformat_languages(languages)
   languages.each do |style , langs|
     langs.each do |langName , type|
       a[langName] = {}
-      a[langName][type] = type
-      a[langName][style] = style
+      a[langName][:type] = type
+      a[langName][:style] = style
     end
   end
   
