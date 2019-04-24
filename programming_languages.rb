@@ -23,7 +23,7 @@ def reformat_languages(languages)
     end
   end
   
-  puts a[langName][:javascript][:style]
+  puts a[:javascript][:style]
   return a
 end
 
