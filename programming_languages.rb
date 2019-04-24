@@ -20,7 +20,7 @@ def reformat_languages(languages)
       end
       
       if langName == :javascript
-        puts "JAVASCRIPT! #{a[style]}"
+        puts "JAVASCRIPT #{a[style].to_s}!"
       end
       
 
