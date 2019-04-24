@@ -25,3 +25,11 @@ def reformat_languages(languages)
   
   return a
 end
+
+
+def my_A(x)
+  puts x
+  return x
+end
+
+my_A
