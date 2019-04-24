@@ -8,12 +8,6 @@ def reformat_languages(languages)
         a[langName][:type] = typeVal
       end
     end
-    
-    langs.each do |langName , type|
-      type.each do |typeKey , typeVal|
-        a[langName][:style] << typeVal
-      end
-    end
   end
   
   
