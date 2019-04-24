@@ -15,7 +15,7 @@ def reformat_languages(languages)
         puts "Has no style, adding it"
         a[langName][:style] = []
         puts a[langName][:style]
-        a[langName][:style] << style
+        #a[langName][:style] << style
       end
       
       puts "pushing #{style} to #{langName}"
