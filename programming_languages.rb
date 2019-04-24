@@ -10,16 +10,13 @@ def reformat_languages(languages)
         a[langName][:type] = typeVal
       end
       
-            
-      if a[langName].include?(:style) == false
-        puts "#{langName} Has no style, adding it"
-        a[langName][:style] = []
-        #puts a[langName][:style]
-        #a[langName][:style] << style
-      end
-      
-      puts "pushing #{style} to #{langName}"
-      a[langName][:style].push(style)
+      a[langName][:style] = []
+    end
+  end
+  
+  languages.each do |style , langs|
+    langs.each do |langName , type|
+      a[langName][:style] << style
     end
   end
   
