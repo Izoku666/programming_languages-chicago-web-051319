@@ -14,10 +14,9 @@ def reformat_languages(languages)
       if a[langName].include?(:style) == false
         #puts "Has no style, adding it"
         a[langName][:style] = []
-        a[langName][:style].push(style)
-      else
-        puts "THIS IS JAVASCRIPT"
       end
+      
+              a[langName][:style].push(style)
     end
   end
   
