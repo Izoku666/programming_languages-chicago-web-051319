@@ -4,6 +4,8 @@ def reformat_languages(languages)
   languages.each do |style , langs|
     langs.each do |langName , type|
       a[langName] = {}
+      a[langName][:style] = style
+      #iterate over the types and add them to "a"
       type.each do |typeKey , typeVal|
         a[langName][:type] = typeVal
       end
