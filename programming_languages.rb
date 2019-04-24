@@ -9,7 +9,7 @@ def reformat_languages(languages)
         #puts "Has no style, adding it"
         a[langName][:style] = []
         a[langName][:style] << style
-      else
+      elsif a[langName].include?(:style) == true
         puts "DOING THE JAVASCRIPT THING"
         a[langName][:style] << style
       end
