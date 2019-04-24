@@ -27,9 +27,3 @@ def reformat_languages(languages)
 end
 
 
-def my_A(x)
-  puts x
-  return x
-end
-
-my_A(reformat_languages)
