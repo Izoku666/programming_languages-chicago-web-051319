@@ -18,8 +18,5 @@ def reformat_languages(languages)
     end
   end
   
-  
-  
-  puts a
   return a
 end
