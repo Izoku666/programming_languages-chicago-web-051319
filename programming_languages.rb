@@ -8,11 +8,12 @@ def reformat_languages(languages)
       if a[langName].include?(:style) == false
         puts "Has no style, adding it"
         a[langName][:style] = []
+        a[langName][:style] << style
       else
-        puts "has style, continuing with Javascript"
+        a[langName][:style] << style
       end
       
-      a[langName][:style] << style
+
       
       #iterate over the types and add them to "a"
       type.each do |typeKey , typeVal|
