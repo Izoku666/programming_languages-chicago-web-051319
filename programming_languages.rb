@@ -16,6 +16,7 @@ def reformat_languages(languages)
         a[langName][:style] = []
       end
       
+      puts "pushing #{style}"
       a[langName][:style].push(style)
     end
   end
