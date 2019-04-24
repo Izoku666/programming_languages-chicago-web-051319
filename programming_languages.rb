@@ -15,6 +15,8 @@ def reformat_languages(languages)
         #puts "Has no style, adding it"
         a[langName][:style] = []
         a[langName][:style] << style
+      else
+        puts "THIS IS JAVASCRIPT"
       end
       
       if langName == :javascript
