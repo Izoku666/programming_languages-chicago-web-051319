@@ -9,6 +9,18 @@ def reformat_languages(languages)
       type.each do |typeKey , typeVal|
         a[langName][:type] = typeVal
       end
+      
+            
+      if a[langName].include?(:style) == false
+        #puts "Has no style, adding it"
+        a[langName][:style] = []
+        a[langName][:style] << style
+      elsif a[langName].include?(:style) == true
+        puts "DOING THE JAVASCRIPT THING"
+        a[langName][:style] << style
+      end
+      
+
     end
   end
   
