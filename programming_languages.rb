@@ -14,7 +14,7 @@ def reformat_languages(languages)
       if a[langName].include?(:style) == false
         puts "#{langName} Has no style, adding it"
         a[langName][:style] = []
-        puts a[langName][:style]
+        #puts a[langName][:style]
         #a[langName][:style] << style
       end
       
