@@ -6,7 +6,7 @@ def reformat_languages(languages)
       a[langName] = {}
       
       if a[langName].include?(:style) == false
-        puts "Has no style, adding it"
+        #puts "Has no style, adding it"
         a[langName][:style] = []
         a[langName][:style] << style
       else
