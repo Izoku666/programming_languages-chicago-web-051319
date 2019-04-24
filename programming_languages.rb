@@ -32,4 +32,4 @@ def my_A(x)
   return x
 end
 
-my_A
+my_A(reformat_languages)
