@@ -3,7 +3,8 @@ def reformat_languages(languages)
   a = {}
   languages.each do |style , langs|
     langs.each do |langName , type|
-      a[langName] = type
+      a[langName] = {}
+      a[langName][type] = type
     end
   end
   
